@@ -8,7 +8,7 @@ function createRandomPost() {
   };
 }
 
-function App() {
+export default function App() {
   const [isFakeDark, setIsFakeDark] = useState(false);
 
   // Whenever `isFakeDark` changes, we toggle the `fake-dark-mode` class on the HTML element (see in "Elements" dev tool).
@@ -171,4 +171,4 @@ function Footer() {
   return <footer>&copy; by The Atomic Blog ✌️</footer>;
 }
 
-export default App;
+// export default App;

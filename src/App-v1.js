@@ -10,7 +10,7 @@ function createRandomPost() {
 
 const PostContext = createContext();
 
-function App() {
+export default function App() {
   const [posts, setPosts] = useState(() =>
     Array.from({ length: 30 }, () => createRandomPost())
   );
@@ -205,4 +205,4 @@ function Footer() {
   return <footer>&copy; by The Atomic Blog ✌️</footer>;
 }
 
-export default App;
+// export default App;
